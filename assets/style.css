@@ -1,0 +1,286 @@
+html, body, h1, h2, h3, h4, p, a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+img{
+    max-width: 100%;
+}
+
+/*nav*/
+.navbar{
+    background-color: #fff;
+}
+.navbar .container{
+    padding: 0;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+
+/*header*/
+.header{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 730px;
+    background: url("img/header_bg.jpg") center no-repeat;
+    background-size: cover;
+}
+.header-item{
+    position: absolute;
+    top:150px;
+}
+.container{
+    padding: 4rem 0;
+}
+.title{
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: #fff;
+}
+.subtitle{
+    font-size: 3.1rem;
+    font-weight: 300;
+    color: #fff;
+}
+.text{
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 2rem 0;
+}
+.button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    background: none;
+    border:1px solid #fff;
+    border-radius: 4rem;
+
+    padding: .5rem 2rem;
+}
+.button:hover{
+    color: #fff;
+    background-color: #9fa9a9;
+
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear;
+}
+.button:focus{
+    outline: 0;
+}
+
+/*feature*/
+.feature-title{
+    color: #636c6c;
+}
+.feature-header i{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.feature .nav-link{
+    font-size: 1.3rem;
+    color: #9fa9a9;
+    margin-bottom: 2rem;
+}
+.feature .nav-link:hover,
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #5dca88;
+    border: 0;
+    transition: color .1s linear;
+}
+.tab-pane i{
+    font-size: 15rem;
+    color: #5dca88;
+}
+.feature h4{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #636c6c;
+}
+.feature p{
+    font-size: 1rem;
+    color: #afb8b8;
+}
+
+/*perfect*/
+.perfect{
+    background-color: #f2f9fe;
+}
+.perfect .title,
+.screens .title{
+    font-size: 2.6rem;
+    color: #5dca88;
+}
+.perfect .subtitle,
+.screens .subtitle{
+    font-size: 2.4rem;
+    color: #8c9494;
+}
+.perfect .text{
+    color: #8c9494;
+}
+.perfect .button{
+    border-color:#8c9494;
+    color: #8c9494;
+}
+.perfect .button:hover{
+    color: #fff;
+}
+
+/*screenshots*/
+.screenshots .title,
+.screenshots .text{
+    color: #8c9494;
+}
+.carousel-item img{
+    display: block;
+    margin: 3rem auto;
+}
+.carousel-indicators .active{
+    background-color: #5dca88 !important;
+}
+.carousel-indicators li{
+    background-color: #cccccc !important;
+}
+
+/*screens*/
+.screens .text{
+    color: #8c9494;
+}
+.screens .button{
+    color: #8c9494;
+    border-color: #8c9494;
+}
+.screens .button:hover{
+    color: #fff;
+}
+
+/*about us*/
+.about .subtitle{
+    color: #8c9494;
+    font-weight: 700;
+}
+.author{
+    font-size: 1.6rem;
+    color: #5dca88;
+}
+.carousel-indicators {
+    top:100%;
+}
+
+/*subscribe*/
+.subscribe .title{
+    color: #636c6c;
+}
+.form-inline{
+    margin: 2rem 0;
+    justify-content: center;
+}
+.subscribe .btn{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    background: #5dca88;
+    text-transform: uppercase;
+}
+.subscribe .btn:focus{
+    outline: 0;
+}
+
+/*footer*/
+.footer{
+    background: #2d312f;
+    color: #8c9494;
+    text-align: center;
+}
+.footer .container{
+    padding: 2rem 0;
+}
+.footer i{
+    font-size: 3rem;
+    margin-right: .3rem;
+    cursor: pointer;
+}
+.footer i:last-child{
+    margin-right: 0;
+}
+.footer i:hover{
+    color: #fff;
+
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+/*Media*/
+@media(max-width:990px){
+
+    /*header*/
+    .header-item{
+        top:0;
+    }
+
+    /*feature*/
+    .feature{
+        text-align: center;
+    }
+    .feature-header{
+        border: 0;
+        border-bottom: 1px solid #afb8b8;
+    }
+
+    /*perfect*/
+    .perfect{
+        text-align: center;
+    }
+    .perfect img{
+        margin-top: 2rem;
+    }
+
+    /*screens*/
+    .screens img{
+        display: block;
+        margin: 2rem auto;
+    }
+}
+
+@media(max-width:770px){
+    .title{
+        font-size: 2.2rem;
+    }
+    .subtitle{
+        font-size:2.2rem;
+    }
+}
+
+@media(max-width:575px){
+
+    .container{
+        text-align: center;
+    }
+
+    /*subscribe*/
+    .subscribe form{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
